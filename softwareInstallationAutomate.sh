@@ -65,12 +65,7 @@ python get-pip.py
 pip install pycryptodomex
 pip install pycryptodomex
 
-# give permissions to Packet_Tracer & extract Packet Tracer 7.2.1 for Linux 64 bit.tar.gz
-cd /home/ozil/Public/Packet_Tracer/
-sudo chmod +x zlib1g-udeb_1.2.8.dfsg-2+b1_amd64.udeb libc6-udeb_2.19-18+deb8u10_amd64.udeb libpng12-0-udeb_1.2.50-2+deb8u3_amd64.udeb
-cd /home/ozil/Public/Packet_Tracer/Packet_Tracer/
-tar -xvzf Packet\ Tracer\ 7.2.1\ for\ Linux\ 64\ bit.tar.gz
-rm -rf Packet\ Tracer\ 7.2.1\ for\ Linux\ 64\ bit.tar.gz
+
 
 # extract jet brains 
 cd /home/ozil/Public/jet_brains/Clion/
@@ -121,4 +116,10 @@ git clone https://github.com/mmsaeed509/BankSystem.git
 git clone https://github.com/mmsaeed509/Graphics.git
 git clone https://github.com/mmsaeed509/Ransomware.git
 
+# give permissions to Packet_Tracer & extract Packet Tracer 7.2.1 for Linux 64 bit.tar.gz
+cd /home/ozil/Public/Packet_Tracer/
+sudo chmod +x zlib1g-udeb_1.2.8.dfsg-2+b1_amd64.udeb libc6-udeb_2.19-18+deb8u10_amd64.udeb libpng12-0-udeb_1.2.50-2+deb8u3_amd64.udeb
+cd /home/ozil/Public/Packet_Tracer/Packet_Tracer/
+tar -xvzf Packet\ Tracer\ 7.2.1\ for\ Linux\ 64\ bit.tar.gz
+rm -rf Packet\ Tracer\ 7.2.1\ for\ Linux\ 64\ bit.tar.gz
 
