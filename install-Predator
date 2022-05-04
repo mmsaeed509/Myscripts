@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Copyright (C)  Mahmoud Mohamed (Ozil)  <https://github.com/mmsaeed509>
+#
+
 yes | sudo pacman -S linux-headers
 
 git clone https://github.com/JafarAkhondali/acer-predator-turbo-and-rgb-keyboard-linux-module
