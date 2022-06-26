@@ -4,7 +4,7 @@
 
 #
 # you can run script with 2 arguments (your commit comment)
-# ./push.sh -m "yourCommit"
+# ./push.ps1 -m "yourCommit"
 #
 
 # a simple PowerShell script to push your commits to GitHub #
