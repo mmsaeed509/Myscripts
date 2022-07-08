@@ -1,10 +1,9 @@
 #
-# Copyright (C) 2022 Mahmoud Mohamed (Ozil)  <https://github.com/mmsaeed509>
+# Copyright (C) 2022 Mahmoud Mohamed (Ozil)<https://github.com/mmsaeed509>
 # LICENSE © GNU-GPL3
 #
 
 <# Variables & Array #>
-
 $WORKING_DIR = pwd # to work in right directory #
 
 <# Array to store the needed directories to update their packages #>
@@ -19,7 +18,7 @@ Write-Host ""
 <# here we loop in all directories one by one and update their packages #>
 foreach ($PACKAGE in $DIRECTORIES) {
     
-    Write-Host " updating packages in $PACKAGE " -ForegroundColor Red
+    Write-Host "updating packages in $PACKAGE ........ " -ForegroundColor Red
     cd $WORKING_DIR/$PACKAGE
     npm run update:common
     Write-Host "$PACKAGE packages updated successfully!" -ForegroundColor Green
@@ -27,10 +26,9 @@ foreach ($PACKAGE in $DIRECTORIES) {
 
 }
 
-
 cd $WORKING_DIR # Return to working directory #
 
 Write-Host ""
 Write-Host "#####################" -ForegroundColor Green
-Write-Host "#      D O N E      #" -ForegroundColor Green
+Write-Host "#      D O N E!     #" -ForegroundColor Green
 Write-Host "#####################" -ForegroundColor Green
