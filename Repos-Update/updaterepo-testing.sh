@@ -38,15 +38,13 @@ echo -e "${BCyan}####################################${Color_Off}"
 
 # old files to be removed! #
 declare -a OLD_DATABASE=(
-						
-						 'exodia-community-repo.db'
-						 'exodia-community-repo.db.tar.gz'
-						 'exodia-community-repo.db.tar.gz.old'
-						 'exodia-community-repo.files'
-						 'exodia-community-repo.files.tar.gz'
-						 'exodia-community-repo.files.tar.gz.old'
-						
-						)
+	exodia-testing-repo.db
+	exodia-testing-repo.db.tar.gz
+	exodia-testing-repo.db.tar.gz.old
+	exodia-testing-repo.files
+	exodia-testing-repo.files.tar.gz
+	exodia-testing-repo.files.tar.gz.old
+	)
 
 # remove old files #
 echo -e "${BRed}\n[*] Removing Old database Files...\n${Color_Off}"
@@ -62,15 +60,15 @@ sleep 0.5
 
 # add all packages to database  #
 echo -e "${BRed}\n[+] Updating pacman database...\n${Color_Off}"
-repo-add exodia-community-repo.db.tar.gz *.pkg.tar.zst
+repo-add exodia-testing-repo.db.tar.gz *.pkg.tar.zst
 echo -e "\n${BGreen}[+] Successful Updating ✔"
 sleep 0.5
 
 # remove syslink to avoid any issues #
 echo -e "${BRed}\n[+] Removing syslink to avoid any Issues...\n${Color_Off}"
-rm exodia-community-repo.db exodia-community-repo.files
-mv exodia-community-repo.db.tar.gz exodia-community-repo.db
-mv exodia-community-repo.files.tar.gz exodia-community-repo.files
+rm exodia-testing-repo.db exodia-testing-repo.files
+mv exodia-testing-repo.db.tar.gz exodia-testing-repo.db
+mv exodia-testing-repo.files.tar.gz exodia-testing-repo.files
 echo -e "\n${BGreen}[+] Successful Removing ✔"
 sleep 0.5
 
