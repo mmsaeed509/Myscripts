@@ -1,7 +1,11 @@
-//
-// Created by o0xwolf on 12/15/22.
-//
-
+/*
+ * 
+ *   Developed by : 00xWolf
+ *   GitHub : @mmsaeed509
+ * 﫥  Mahmoud Mohamed 
+ * 
+ * */
+ 
 #ifndef COLORS_COLORS_H
 #define COLORS_COLORS_H
 
