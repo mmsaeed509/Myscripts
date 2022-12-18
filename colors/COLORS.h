@@ -59,6 +59,36 @@ static string BACKGROUND_PURPLE = "\033[45m";
 static string BACKGROUND_CYAN   = "\033[46m";
 static string BACKGROUND_WHITE  = "\033[47m";
 
+/* High Intensity Colors */
+static string HIGH_INTENSITY_BLACK  = "\033[0;90m";
+static string HIGH_INTENSITY_RED    = "\033[0;91m";
+static string HIGH_INTENSITY_GREEN  = "\033[0;92m";
+static string HIGH_INTENSITY_YELLOW = "\033[0;93m";
+static string HIGH_INTENSITY_BLUE   = "\033[0;94m";
+static string HIGH_INTENSITY_PURPLE = "\033[0;95m";
+static string HIGH_INTENSITY_CYAN   = "\033[0;96m";
+static string HIGH_INTENSITY_WHITE  = "\033[0;97m";
+
+/* Bold High Intensity Colors */
+static string BOLD_HIGH_INTENSITY_BLACK  = "\033[1;90m";
+static string BOLD_HIGH_INTENSITY_RED    = "\033[1;91m";
+static string BOLD_HIGH_INTENSITY_GREEN  = "\033[1;92m";
+static string BOLD_HIGH_INTENSITY_YELLOW = "\033[1;93m";
+static string BOLD_HIGH_INTENSITY_BLUE   = "\033[1;94m";
+static string BOLD_HIGH_INTENSITY_PURPLE = "\033[1;95m";
+static string BOLD_HIGH_INTENSITY_CYAN   = "\033[1;96m";
+static string BOLD_HIGH_INTENSITY_WHITE  = "\033[1;97m";
+
+/* High Intensity Background Colors */
+static string HIGH_INTENSITY_BACKGROUND_BLACK  = "\033[0;100m";
+static string HIGH_INTENSITY_BACKGROUND_RED    = "\033[0;101m";
+static string HIGH_INTENSITY_BACKGROUND_GREEN  = "\033[0;102m";
+static string HIGH_INTENSITY_BACKGROUND_YELLOW = "\033[0;103m";
+static string HIGH_INTENSITY_BACKGROUND_BLUE   = "\033[0;104m";
+static string HIGH_INTENSITY_BACKGROUND_PURPLE = "\033[0;105m";
+static string HIGH_INTENSITY_BACKGROUND_CYAN   = "\033[0;106m";
+static string HIGH_INTENSITY_BACKGROUND_WHITE  = "\033[0;107m";
+
 class COLORS {
 
     // COLORS in C++
