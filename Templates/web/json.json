@@ -16,8 +16,9 @@
 * 
  * */
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Exodia OS");
-    }
+{
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
 }
+  

@@ -1,0 +1,37 @@
+---
+
+# >
+  Copyright © 2022 To Cyb3rTh1eveZ
+
+    ██████╗██╗   ██╗██████╗ ██████╗ ██████╗ ████████╗██╗  ██╗ ██╗███████╗██╗   ██╗███████╗███████╗
+   ██╔════╝╚██╗ ██╔╝██╔══██╗╚════██╗██╔══██╗╚══██╔══╝██║  ██║███║██╔════╝██║   ██║██╔════╝╚══███╔╝
+   ██║      ╚████╔╝ ██████╔╝ █████╔╝██████╔╝   ██║   ███████║╚██║█████╗  ██║   ██║█████╗    ███╔╝
+   ██║       ╚██╔╝  ██╔══██╗ ╚═══██╗██╔══██╗   ██║   ██╔══██║ ██║██╔══╝  ╚██╗ ██╔╝██╔══╝   ███╔╝
+   ╚██████╗   ██║   ██████╔╝██████╔╝██║  ██║   ██║   ██║  ██║ ██║███████╗ ╚████╔╝ ███████╗███████╗
+    ╚═════╝   ╚═╝   ╚═════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═╝╚══════╝  ╚═══╝  ╚══════╝╚══════╝
+
+
+
+    Copyright (C) Mahmoud Mohamed (00xWolf)  <https://github.com/mmsaeed509>
+    LICENSE © GNU-GPL3	
+  														
+
+# Application settings
+debug: true
+port: 8080
+
+# Database settings
+database:
+  host: localhost
+  port: 3306
+  name: app_db
+  user: app_user
+  password: p@ssw0rd
+
+# Email settings
+email:
+  from: info@example.com
+  host: smtp.example.com
+  port: 587
+  user: info@example.com
+  password: p@ssw0rd
