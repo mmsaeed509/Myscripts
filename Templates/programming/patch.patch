@@ -1,5 +1,3 @@
-#!/bin/sh
-
 #####################################
 #                                   #
 #  @author      : 00xWolf           #
@@ -9,5 +7,12 @@
 #                                   #
 #####################################
 
-
-echo "Exodia OS"
+--- example.txt   (original file)
++++ example.txt   (modified file)
+@@ -1,5 +1,5 @@
+ This is the original line 1.
+ This is the original line 2.
+-This is the original line 3.
++This is the new line 3.
+ This is the original line 4.
+ This is the original line 5.

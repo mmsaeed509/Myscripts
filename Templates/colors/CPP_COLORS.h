@@ -1,10 +1,14 @@
 /*
+ * ----------------------------------
  *
- *   Developed by : 00xWolf
- *   GitHub : @mmsaeed509
- * 﫥  Mahmoud Mohamed
+ * @author      : 00xWolf
+ *   GitHub    : @mmsaeed509
+ *   Developer : Mahmoud Mohamed
+ * 﫥  Copyright : Mahmoud Mohamed
  *
- * */
+ * ---------------------------------
+ *
+*/
 
 #ifndef COLORS_COLORS_H
 #define COLORS_COLORS_H
