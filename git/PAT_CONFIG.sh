@@ -5,8 +5,8 @@
 # LICENSE © GNU-GPL3
 #
 
-USERNAME="mmsaeed509"
+USERNAME="Mahmoud Mohamed (00xWolf - mmsaeed509)"
 E_MAIL="mmsaeed509@gmail.com"
 
-git config --global user.email ${E_MAIL}
 git config --global user.name ${USERNAME}
+git config --global user.email ${E_MAIL}
