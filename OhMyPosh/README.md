@@ -1,0 +1,3 @@
+- install fonts, and [**`JetBrains Nerd Fonts`**](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip)
+- RUN `Unblock-File .\Convertto-TextASCIIArt.ps1` To run script without warnings
+- copy `Microsoft.PowerShell_profile.ps1` to `C:\Users\<USER>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
