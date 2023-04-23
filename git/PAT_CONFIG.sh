@@ -19,3 +19,5 @@ git config --system user.email ${E_MAIL}
 # Project ONLY, also you can edit from < /.git/config > #
 git config user.name ${USERNAME}
 git config user.email ${E_MAIL}
+
+git config --global core.editor "nvim"
