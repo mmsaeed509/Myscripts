@@ -20,4 +20,5 @@ git config --system user.email ${E_MAIL}
 git config user.name ${USERNAME}
 git config user.email ${E_MAIL}
 
+# set the default editor for commit msg #
 git config --global core.editor "nvim"
