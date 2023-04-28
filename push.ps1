@@ -24,6 +24,9 @@ Write-Host "`n[*] Your Current Branch : $Branch" -ForegroundColor Red
 Write-Host "`n[+] Updating Repo... `n" -ForegroundColor Magenta
 git pull 
 
+Write-Host "`n[+] The new changes in the repo:- `n" -ForegroundColor Magenta
+git status -s
+
 Write-Host "`n[+] Adding new changes to the repo... `n" -ForegroundColor Magenta
 git add --all .
 

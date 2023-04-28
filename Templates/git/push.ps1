@@ -1,11 +1,7 @@
-#####################################
-#                                   #
-#  @author      : 00xWolf           #
-#    GitHub    : @mmsaeed509       #
-#    Developer : Mahmoud Mohamed   #
-#  﫥  Copyright : Mahmoud Mohamed   #
-#                                   #
-#####################################
+#
+# Copyright (C) 2022 Mahmoud Mohamed (00xWolf)  <https://github.com/mmsaeed509>
+# LICENSE © GNU-GPL3
+#
 
 #
 # you can run script with 2 arguments (your commit comment)
@@ -27,6 +23,9 @@ Write-Host "`n[*] Your Current Branch : $Branch" -ForegroundColor Red
 # get new updates if it founded #
 Write-Host "`n[+] Updating Repo... `n" -ForegroundColor Magenta
 git pull 
+
+Write-Host "`n[+] The new changes in the repo:- `n" -ForegroundColor Magenta
+git status -s
 
 Write-Host "`n[+] Adding new changes to the repo... `n" -ForegroundColor Magenta
 git add --all .
@@ -57,5 +56,4 @@ Write-Host ""
 git push -u origin $Branch
 
 # D O N E! #
-Write-Host "`n[✔] D O N E `n" -ForegroundColor Green
-
+Write-Host "`n[✔] D O N E `n" -ForegroundColor Green"
