@@ -24,11 +24,24 @@ XRANDR=$(xrandr)
 # Parse the output to get connected monitors #
 MONITORS=($(echo "$XRANDR" | grep -w "connected" | cut -d" " -f1))
 
+# Set the resolution to the highest for all connected monitors #
+for monitor in "${MONITORS[@]}"
+    do
+        # Get the highest resolution available for the monitor #
+        highest_resolution=$(echo "$XRANDR" | grep -w "$monitor" -A1 | tail -n 1 | awk '{print $1}')
+    
+        # Set the monitor to the highest resolution #
+        xrandr --output "$monitor" --mode "$highest_resolution"
+
+done
+
+
 # Arrange the monitors according to the specified layout #
 NUM_OF_MONITORS=${#MONITORS[@]}
 
 case $NUM_OF_MONITORS in
-
+    
+    # case No. 1 -> `2` monitors #
     2)
         # Only one monitor connected, set the external monitor to the right of the main monitor #
         
@@ -41,7 +54,7 @@ case $NUM_OF_MONITORS in
         xrandr --output ${MONITORS[0]} --primary --mode ${MAIN_RESOLUTION} --pos 0x0 --auto --output ${MONITORS[1]} --mode ${RESOLUTION} --pos ${POSITION}x0 --auto
         ;;
 
-    # case No. 3 -> more than one monitor #
+    # case No. 2 -> more than one monitor #
     *)
         # More than one monitor connected, arrange them with all monitors on top of the main monitor #
 
@@ -53,7 +66,7 @@ case $NUM_OF_MONITORS in
         
         for (( i=1; i<NUM_OF_MONITORS; i++ ))
             do
-
+            
                 # get position and resolutions #
                 RESOLUTION=$(xrandr | grep -w ${MONITORS[$i]} -A1 | tail -n 1 | awk '{print $1}')
                 POSITION=$(xrandr | grep -w ${MONITORS[$i]} -A1 | tail -n 1 | awk -F'x' '{print $1}' | tr -d ' ')
