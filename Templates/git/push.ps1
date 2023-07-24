@@ -56,4 +56,4 @@ Write-Host ""
 git push -u origin $Branch
 
 # D O N E! #
-Write-Host "`n[✔] D O N E `n" -ForegroundColor Green"
+Write-Host "`n[✔] D O N E `n" -ForegroundColor Green
