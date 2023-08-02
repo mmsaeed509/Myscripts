@@ -29,3 +29,8 @@ git config --global core.editor "nvim"
 
 # raising the postBuffer size #
 git config --global http.postBuffer 524288000
+
+# cache your credentials (in my case, it's useful for using GitLab) #
+git config --global credential.helper cache  # caching your credentials for 15 min timeout
+
+git config --global credential.helper 'cache --timeout=31536000'  # caching your credentials for 1-year timeout
