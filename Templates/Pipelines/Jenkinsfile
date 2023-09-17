@@ -1,0 +1,82 @@
+///////////////////////////////////////
+//                                   //
+//  @author      : 00xWolf           //
+//    GitHub    : @mmsaeed509       //
+//    Developer : Mahmoud Mohamed   //
+//  﫥  Copyright : Exodia OS         //
+//                                   //
+///////////////////////////////////////
+
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+
+            steps {
+
+                // Checkout the code from your version control system (e.g., Git)
+                checkout scm
+
+            }
+
+        }
+
+        stage('Build') {
+
+            steps {
+
+                // Compile and package your Java application
+                sh 'mvn clean package'
+
+            }
+
+        }
+
+        stage('Test') {
+
+            steps {
+
+                // Run unit tests
+                sh 'mvn test'
+
+            }
+
+        }
+
+        stage('Deploy') {
+
+            steps {
+
+                // Deploy the application to Tomcat
+                sh 'cp target/myapp.war /path/to/tomcat/webapps/'
+                sh '/path/to/tomcat/bin/shutdown.sh' // Stop Tomcat
+                sh '/path/to/tomcat/bin/startup.sh'  // Start Tomcat
+                
+            }
+
+        }
+
+    }
+
+    post {
+
+        success {
+
+            // Notify on successful deployment, send email, or trigger other jobs
+            echo 'Deployment successful!'
+
+        }
+
+        failure {
+
+            // Notify on failure, send alerts, or handle cleanup
+            echo 'Deployment failed!'
+
+        }
+
+    }
+    
+}
