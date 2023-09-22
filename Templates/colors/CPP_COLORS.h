@@ -95,7 +95,7 @@ static string HIGH_INTENSITY_BACKGROUND_WHITE  = "\033[0;107m";
 
 class COLORS {
 
-    // COLORS in C++
+// COLORS in C++
 
 };
 

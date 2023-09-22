@@ -88,8 +88,6 @@ static char HIGH_INTENSITY_BACKGROUND_PURPLE [] = "\033[0;105m";
 static char HIGH_INTENSITY_BACKGROUND_CYAN   [] = "\033[0;106m";
 static char HIGH_INTENSITY_BACKGROUND_WHITE  [] = "\033[0;107m";
 
-    // COLORS in C
-
-
+// COLORS in C
 
 #endif //COLORS_COLORS_H

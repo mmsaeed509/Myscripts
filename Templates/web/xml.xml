@@ -7,4 +7,23 @@
  
  -->
  
- <tag></tag>
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+    <person>
+
+        <name>Mahmoud Mohamed</name>
+        <age>30</age>
+        <city>New York</city>
+
+    </person>
+
+    <person>
+
+        <name>Mahmoud Mohamed</name>
+        <age>25</age>
+        <city>Los Angeles</city>
+
+    </person>
+
+</root>

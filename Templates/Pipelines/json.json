@@ -1,0 +1,58 @@
+/*
+ * ----------------------------------
+ *
+ * @author      : 00xWolf
+ *   GitHub    : @mmsaeed509
+ *   Developer : Mahmoud Mohamed
+ * 﫥  Copyright : Mahmoud Mohamed
+ *
+ * ---------------------------------
+ *
+*/
+
+{
+    "pipeline_name": "DataProcessingPipeline",
+    "description": "A simple data processing pipeline",
+
+    "steps": [
+
+      {
+
+        "step_name": "DataExtraction",
+        "type": "extract",
+        "source": "data_source.csv",
+        "destination": "extracted_data.csv"
+
+      },
+
+      {
+
+        "step_name": "DataTransformation",
+        "type": "transform",
+        "source": "extracted_data.csv",
+        "destination": "transformed_data.csv",
+        "transformation_script": "transform.py"
+
+      },
+
+      {
+
+        "step_name": "DataLoading",
+        "type": "load",
+        "source": "transformed_data.csv",
+        "destination": "final_data.csv",
+        "database_connection": {
+          "host": "localhost",
+          "port": 5432,
+          "username": "user",
+          "password": "password",
+          "database": "mydb"
+
+        }
+
+      }
+
+    ]
+
+  }
+

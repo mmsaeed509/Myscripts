@@ -11,6 +11,10 @@
 
 ## ------------ COLORS ------------ ##
 
+#
+# you can load the colors like `. /path/to/fileColor`
+# eg `. /usr/share/exodia/COLORS.sh`
+
 # Reset #
 RESET_COLOR='\033[0m' # Text Reset
 
