@@ -23,7 +23,7 @@ foreach ($PACKAGE in $DIRECTORIES) {
     Write-Host "   ==> updating $PACKAGE packages... " -ForegroundColor Red
     cd $WORKING_DIR/$PACKAGE
     npm run update:common
-    Write-Host "   [✔] $PACKAGE packages updated successfully!" -ForegroundColor Green
+    Write-Host "       [✔] $PACKAGE packages updated successfully!" -ForegroundColor Green
     Write-Host ""
 
 }
