@@ -1,0 +1,50 @@
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Exodia OS         #
+#                                   #
+#####################################
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    # Box settings
+    config.vm.box = "ubuntu/bionic64"  # Change to your desired base box
+  
+    # Virtual machine settings
+    config.vm.network "private_network", type: "dhcp"
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = 1024  # Set the amount of RAM for the VM (in MB)
+      vb.cpus = 2      # Set the number of CPU cores for the VM
+    end
+  
+    # Provisioning
+    config.vm.provision "shell", inline: <<-SHELL
+      # Customize provisioning here
+      # You can use shell scripts or other provisioners like Ansible or Chef
+      apt-get update
+      apt-get install -y some-package
+    SHELL
+  
+    # Optional: Synced folders (if needed)
+    # config.vm.synced_folder "host_folder", "/guest_folder"
+  
+    # Optional: Port forwarding (if needed)
+    # config.vm.network "forwarded_port", guest: 80, host: 8080
+  
+    # Optional: Additional configuration
+    # config.vm.provider "virtualbox" do |vb|
+    #   vb.customize ["modifyvm", :id, "--some-setting", "value"]
+    # end
+  
+    # Optional: Define multiple VMs
+    # config.vm.define "second_vm" do |second_vm|
+    #   second_vm.vm.box = "ubuntu/bionic64"
+    #   second_vm.vm.network "private_network", type: "dhcp"
+    #   # ... other configuration for the second VM
+    # end
+  end
+  
