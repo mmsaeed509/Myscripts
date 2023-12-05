@@ -14,9 +14,9 @@
 
 using namespace std;
 
-main() {
+int main() {
 
-	cout << "Exodia OS" << endl;
+	cout<< "Exodia OS" <<endl;
 	return 0;
 	
 }

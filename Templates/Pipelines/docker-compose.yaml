@@ -1,0 +1,33 @@
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Mahmoud Mohamed   #
+#                                   #
+#####################################
+
+
+version: '3'
+services:
+  # Service name
+  service_name:
+    # Image name
+    image: image_name
+    # Port mappings
+    ports:
+      - "host_port:container_port"
+    # Environment variables
+    environment:
+      - ENV_VAR_NAME=ENV_VAR_VALUE
+    # Volume mappings
+    volumes:
+      - host_path:/container_path
+    # Command to run
+    command: command_to_run
+    # Other options
+    restart: always
+    stdin_open: true
+    tty: true
+
+
