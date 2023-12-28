@@ -1,0 +1,38 @@
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Exodia OS         #
+#                                   #
+#####################################
+
+[general]
+  title = "Example Configuration"
+  version = 1.0
+  author = "Your Name"
+
+[database]
+  server = "localhost"
+  port = 5432
+  dbname = "mydatabase"
+  username = "admin"
+  password = "secretpassword"
+
+[server]
+  host = "127.0.0.1"
+  port = 8080
+  debug = true
+
+[logging]
+  level = "info"
+  file = "app.log"
+
+[features]
+  enable_feature1 = true
+  enable_feature2 = false
+
+[colors]
+  primary = "#3498db"
+  secondary = "#2ecc71"
+  background = "#ecf0f1"

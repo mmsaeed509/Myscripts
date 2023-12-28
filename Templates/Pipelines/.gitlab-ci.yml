@@ -1,0 +1,39 @@
+#####################################
+#                                   #
+#  @author      : 00xWolf           #
+#    GitHub    : @mmsaeed509       #
+#    Developer : Mahmoud Mohamed   #
+#  﫥  Copyright : Exodia OS         #
+#                                   #
+#####################################
+
+# define the stages #
+stages:
+  - build
+  - test
+
+# the 1st Job #
+build the car:
+  stage: build
+  script:
+    - mkdir build
+    - cd build
+    - touch car.txt
+    - echo "chassis" >> car.txt
+    - echo "engine"  >> car.txt
+    - echo "wheels"  >> car.txt
+  artifacts:
+    paths:
+      - build/
+
+# the 2nd Job #
+test the car:
+  stage: test
+  script:
+    - ls
+    - test -f build/car.txt
+    - cd build
+    - cat car.txt
+    - grep "chassis" car.txt
+    - grep "engine"  car.txt
+    - grep "wheels"  car.txt
