@@ -118,27 +118,37 @@ git pull
 echo -e "\n${BPurple}[+] The new changes in the repo:\n\n${BYellow}${DEFAULT_COMMIT_MSG}${RESET_COLOR}"
 
 # Loop through all arguments #
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        -t|--target-branch)
-            TARGET_BRANCH="$2"
-            shift 2
-            ;;
-        -m|--commit-msg)
-            DEFAULT_COMMIT_MSG="$2"
-            shift 2
-            ;;
-        --create-pr)
-            CREATE_PR=true
-            TARGET_PR_BRANCH="$2"
-            shift 2
-            ;;
-        *)
-            # Ignore unrecognized options #
-            shift
-            ;;
-    esac
+while [[ $# -gt 0 ]];
+    
+    do
+        
+        case "$1" in
+
+            -t|--target-branch)
+                TARGET_BRANCH="$2"
+                shift 2
+                ;;
+
+            -m|--commit-msg)
+                DEFAULT_COMMIT_MSG="$2"
+                shift 2
+                ;;
+
+            --create-pr)
+                CREATE_PR=true
+                TARGET_PR_BRANCH="$2"
+                shift 2
+                ;;
+                
+            *)
+                # Ignore unrecognized options #
+                shift
+                ;;
+
+        esac
+
 done
+
 echo -e "\n${BRed}[+] Target Branch : ${BYellow}${TARGET_BRANCH}${RESET_COLOR}"
 if [ "${TARGET_BRANCH}" != "${DEFAULT_BRANCH}" ];
     
