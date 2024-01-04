@@ -98,7 +98,7 @@ while IFS=$'\n' read -r -d '' line;
 done < <(git status -s -z)
 
 # Remove the trailing comma and space, if any #
-DEFAULT_COMMIT_MSG=$(echo "$DEFAULT_COMMIT_MSG" | sed 's/, $//')
+DEFAULT_COMMIT_MSG=$(echo -e "$DEFAULT_COMMIT_MSG" | sed 's/, $//' | tr '\\' '\n')
 
 # If no changes detected, use a default message #
 if [ -z "$DEFAULT_COMMIT_MSG" ];
