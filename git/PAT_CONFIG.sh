@@ -34,3 +34,5 @@ git config --global http.postBuffer 524288000
 git config --global credential.helper cache  # caching your credentials for 15 min timeout
 
 git config --global credential.helper 'cache --timeout=31536000'  # caching your credentials for 1-year timeout
+
+git config --global color.ui true
